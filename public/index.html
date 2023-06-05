@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/main.js" defer></script>
+	<title>Leap.ai Image Generator</title>
+</head>
+
+<body>
+
+	<div class="promptDiv">
+		<form id="imagePrompt">
+			<h2 id="ImagineAnImage"> 長輩圖生產器 </h2>
+			<input type="text" id="promptInput"><br>
+			<button class="generateButton" type="submit" class="btn"> 生成圖片 </button>
+		</form>
+	</div>
+
+	<div class="image-container">
+		<h2 class="msg"></h2>
+
+		<div class="i">
+			<img src="" alt="" id="image"/>
+			<canvas id="canvas" width=512 height=512></canvas> <br/>
+		</div>
+		<div class="item_box">
+			<input type="text" id="item" placeholder="在圖片放上文字">
+			<input type="color" id="item_color" data-coloum="color">
+		</div>
+		
+	</div>
+
+	<div class="spinner">
+	</div>
+</body>
+
+</html>
