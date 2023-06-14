@@ -20,7 +20,7 @@ window.onload=function(){
 	window.addEventListener("mousedown", draw, true);
 }
 
-//生成圖片
+//文字讀取
 function onSubmit(e) {
 	e.preventDefault();
 
@@ -37,7 +37,7 @@ function onSubmit(e) {
 	generateImageRequest(prompt);
 }
 
-//生成圖片reruest
+//生成圖片
 async function generateImageRequest(prompt) {
 	try {
 		showSpinner();
