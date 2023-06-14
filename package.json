@@ -13,12 +13,11 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "@leap-ai/sdk": "0.0.113",
+    "@leap-ai/sdk": "^0.0.113",
     "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "nodemon": "^2.0.21",
-    "openai": "^3.2.1",
     "path": "^0.12.7",
     "request": "^2.88.2"
   },

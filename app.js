@@ -15,10 +15,9 @@ app.post('/generate', async (req, res) => {
 	const prompt = req.body.prompt;
 
 	try {
-		// //stable diffusion 1.5
-		// leap.usePublicModel("sd-1.5");
-		
-		leap.usePublicModel("sd-2.1");
+
+		//stable diffusion 1.5
+		leap.usePublicModel("sd-1.5");
 
 		//generate the image by passing in the prompt, using leap SDK
 		const response = await leap.generate.generateImage({
@@ -43,4 +42,4 @@ app.post('/generate', async (req, res) => {
 })
 
 app.listen(port);
-console.log(`Running on localhost:${port}`);
+console.log(`Running on localhost:${port}` );

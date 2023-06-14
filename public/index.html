@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+<!-- 文字input -->
 	<div class="promptDiv">
 		<form id="imagePrompt">
 			<h2 id="ImagineAnImage"> 長輩圖生產器 </h2>
@@ -17,23 +17,25 @@
 			<button class="generateButton" type="submit" class="btn"> 生成圖片 </button>
 		</form>
 	</div>
-
+<!-- 圖片顯示區	 -->
 	<div class="image-container">
 		<h2 class="msg"></h2>
-
+		<!-- 顯示圖片與編輯圖片區域 -->
 		<div class="i">
-			<img src="" alt="" id="image"/>
+			<img src="" alt="" id="image" />
 			<canvas id="canvas" width=512 height=512></canvas> <br/>
 		</div>
+		<!-- 編輯圖片上的文字區域 -->
 		<div class="item_box">
+			<!-- 文字input -->
 			<input type="text" id="item" placeholder="在圖片放上文字">
+			<!-- 文字顏色 -->
 			<input type="color" id="item_color" data-coloum="color">
 		</div>
-		
 	</div>
 
-	<div class="spinner">
-	</div>
+	<div class="spinner"></div>
+
 </body>
 
 </html>

@@ -1,5 +1,7 @@
+// 編輯區域
 window.onload=function(){
 	function draw(event) {
+		//取得前端與設定參數
 		var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 		var text = document.getElementById('item').value;
@@ -8,14 +10,17 @@ window.onload=function(){
 		ctx.fillStyle = color;
 		ctx.font = "75px Arial";
 		var img = document.getElementById("image");
+		// 把輸入的文字變成圖片
 		ctx.drawImage(img, 0, 0);
 		ctx.fillText(text, 50, 455);
 		console.log(color);
 	}
+	//畫出來
 	window.addEventListener("keyup", draw, true);
 	window.addEventListener("mousedown", draw, true);
 }
 
+//生成圖片
 function onSubmit(e) {
 	e.preventDefault();
 
@@ -32,6 +37,7 @@ function onSubmit(e) {
 	generateImageRequest(prompt);
 }
 
+//生成圖片reruest
 async function generateImageRequest(prompt) {
 	try {
 		showSpinner();
@@ -64,10 +70,12 @@ async function generateImageRequest(prompt) {
 	}
 }
 
+//顯示
 function showSpinner() {
 	document.querySelector('.spinner').classList.add('show');
 }
 
+//移除
 function removeSpinner() {
 	document.querySelector('.spinner').classList.remove('show');
 }
